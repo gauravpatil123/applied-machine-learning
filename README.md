@@ -29,6 +29,8 @@ as part of my exploratory data analysis and visualization (EDAV), I was able to:
 * pick a nationality and filter the merged data to find all artworks done by artists of that nationality. Figured out how to handle artworks that have multiple artists.
 * Do additional analysis of the data that picked my interest.
 
+---
+
 ### 2. "Supervised Learning"
 In this project, I build a **red wine quality classifier** using supervised machine learning techniques.
 The dataset used in this project is the [Wine Quality Dataset](https://archive.ics.uci.edu/ml/datasets/Wine+Quality) from the UCI Machine Learning Repository.
@@ -59,6 +61,8 @@ def wine_quality(row:np.array, model:Pipeline) -> int:
 
     return result
 ```
+
+---
 
 ### 3. "Neural Networks"
 Project Details
