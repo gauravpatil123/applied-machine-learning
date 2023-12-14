@@ -30,7 +30,35 @@ as part of my exploratory data analysis and visualization (EDAV), I was able to:
 * Do additional analysis of the data that picked my interest.
 
 ### 2. "Supervised Learning"
-Project Details
+In this project, I build a **red wine quality classifier** using supervised machine learning techniques.
+The dataset used in this project is the [Wine Quality Dataset](https://archive.ics.uci.edu/ml/datasets/Wine+Quality) from the UCI Machine Learning Repository.
+
+I conducted the following processess to built the classifier:
+
+1. **Exploratory data analysis:** checked columns to understand datatypes, value ranges, find possible missing values, the correlation between features, and create relevant data visualization
+2.  **Modeling**:
+    * created a sklearn pipeline  that included preprocessing steps such as scaling and one hot encoding of categorical variable.
+    *  trained **Linear learners** (logistic regression & SVM) classfiers and reported the performance using confusion matrix
+    *  trained **non-linear classifers** (random forrest & SVM with non linear kernels) and reported the performance using confusion matrix.
+3. **Hyperparameter Tuning**: Picked the model with the highest F1 score and ran a ```grid search``` to improve the result. Reported the best set of parameters.
+
+4. Used the best model from step 3 to create a function that takes a single row of test data and predict the quality of wine. The function is described below:
+
+```python
+# Function to predict the wine quality
+def wine_quality(row:np.array, model:Pipeline) -> int:
+    """
+    Input:
+        row: np array of test feature data
+        model: trained model pipeline
+    Output:
+        result: wine quality as int
+    """
+
+    result = model.predict(row)[0]
+
+    return result
+```
 
 ### 3. "Neural Networks"
 Project Details
