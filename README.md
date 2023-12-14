@@ -10,8 +10,8 @@ This is a repository of multiple applied machine learning & Data Science project
 **About**</br>
 This Repository had 3 projects for Data EDA, applied machine learning & deep learning.
 
-**Projects**</br>
-## 1. "Data EDA & Visualization"
+## Projects
+### 1. "Data EDA & Visualization"
 This is an Exploratory Data Analysis and Visualization (EDAV) project.
 This project involves Exploring data, summarizing their main characteristics, often with visual to form better questions.
 The 2 datasets used for this project are from [The Museum of Modern Art (MoMA) Collection](https://github.com/MuseumofModernArt/collection).
@@ -29,8 +29,8 @@ as part of my exploratory data analysis and visualization (EDAV), I was able to:
 * pick a nationality and filter the merged data to find all artworks done by artists of that nationality. Figured out how to handle artworks that have multiple artists.
 * Do additional analysis of the data that picked my interest.
 
-2. "Supervised Learning"<br>
+### 2. "Supervised Learning"
 Project Details
 
-3. "Neural Networks"<br>
+### 3. "Neural Networks"
 Project Details
