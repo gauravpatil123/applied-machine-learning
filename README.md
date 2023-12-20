@@ -73,7 +73,8 @@ This project has two sections. Each section has been broken down into multiple p
     - Doubled the number of parameters while keeping everything else the same and compared the result. Explaining the difference in the performance of both the classifiers.
     ```python
     # Funtion to build a custom NN classifier
-    def two_layer_NN(normalizer, layer_1_neurons, layer_2_neurons, hidden_activation, output_neurons, output_activation, optimizer, loss, metrics):
+    def two_layer_NN(normalizer, layer_1_neurons, layer_2_neurons, hidden_activation, 
+                        output_neurons, output_activation, optimizer, loss, metrics):
         model = tf.keras.Sequential([
         normalizer,
         layers.Dense(layer_1_neurons, activation=hidden_activation),
@@ -90,7 +91,8 @@ This project has two sections. Each section has been broken down into multiple p
     - First, built a custom model with my choice of the parameters like layer size, number of convolution layer, filter size, etc.
     ```python
     # Function to built the custom CNN image classifier model
-    def build_custom_CNN(num_filters, filter_size, conv_activation, input_shape, max_pool_size, layer_1_neurons, layer_2_neurons, output_neurons):
+    def build_custom_CNN(num_filters, filter_size, conv_activation, input_shape, 
+                            max_pool_size, layer_1_neurons, layer_2_neurons, output_neurons):
         model = tf.keras.Sequential([
             layers.Conv2D(num_filters, filter_size, activation=conv_activation, input_shape=input_shape),
             BatchNormalization(),
@@ -120,7 +122,8 @@ This project has two sections. Each section has been broken down into multiple p
     - Then, took advantage of `transfer learning` by using `EfficientNetB0` as my model. Compared the result and explained the difference with the custom model.
     ```python
     # Functionto create the transfer learning CNN classifier model
-    def transfer_CNN_model(drop_out_rate, max_pool_size, num_classes, optimizer, loss, metrics, input_shape):
+    def transfer_CNN_model(drop_out_rate, max_pool_size, num_classes, 
+                                optimizer, loss, metrics, input_shape):
         inputs = layers.Input(shape=input_shape)
         x = inputs
         
