@@ -119,7 +119,7 @@ This project has two sections. Each section has been broken down into multiple p
 
         return model
     ```
-    - Then, took advantage of `transfer learning` by using `EfficientNetB0` as my model. Compared the result and explained the difference with the custom model.
+    - Took advantage of `transfer learning` by using `EfficientNetB0` as my model. Compared the result and explained the difference with the custom model.
     ```python
     # Functionto create the transfer learning CNN classifier model
     def transfer_CNN_model(drop_out_rate, max_pool_size, num_classes, 
