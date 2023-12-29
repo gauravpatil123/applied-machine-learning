@@ -88,7 +88,7 @@ This project has two sections. Each section has been broken down into multiple p
     ```
 
 * The second part of this porject is to classify images using CNN. The dataset for this excersise is [food images](https://www.kaggle.com/kmader/food41). 
-    - First, built a custom model with my choice of the parameters like layer size, number of convolution layer, filter size, etc.
+    - Built a custom model with my choice of the parameters like layer size, number of convolution layer, filter size, etc.
     ```python
     # Function to built the custom CNN image classifier model
     def build_custom_CNN(num_filters, filter_size, conv_activation, input_shape, 
